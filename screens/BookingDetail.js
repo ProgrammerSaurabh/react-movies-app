@@ -30,7 +30,6 @@ const BookingDetail = ({ route }) => {
   } = useSelector((state) => state.bookings);
 
   const { params } = route;
-  const { movie } = params;
   const { booking: bookingId } = params;
 
   useEffect(() => {
@@ -51,7 +50,7 @@ const BookingDetail = ({ route }) => {
         <View>
           <View style={{ height: 300 }}>
             <ImageBackground
-              source={{ uri: movie?.image }}
+              source={{ uri: booking?.movie?.image }}
               style={{ flex: 1, justifyContent: "flex-end" }}
               resizeMode="contain"
             />
@@ -64,15 +63,15 @@ const BookingDetail = ({ route }) => {
               paddingTop: 15,
             }}
           >
-            <Text style={styles.movieTitle}>{movie?.title}</Text>
+            <Text style={styles.movieTitle}>{booking?.movie?.title}</Text>
             <Text>
               <Text style={styles.italic}>Genre: </Text>
-              <Text style={styles.content}>{movie?.genre}</Text>
+              <Text style={styles.content}>{booking?.movie?.genre}</Text>
             </Text>
-            {movie?.director && (
+            {booking?.movie?.director && (
               <Text>
                 <Text style={styles.italic}>Director: </Text>
-                <Text style={styles.content}>{movie?.director}</Text>
+                <Text style={styles.content}>{booking?.movie?.director}</Text>
               </Text>
             )}
             {booking?.date && (
@@ -85,23 +84,28 @@ const BookingDetail = ({ route }) => {
             )}
             <Text>
               <Text style={styles.italic}>Stars: </Text>
-              <Text style={styles.content}>{movie?.stars}</Text>
+              <Text style={styles.content}>{booking?.movie?.stars}</Text>
             </Text>
             <View style={{ marginVertical: 10, marginTop: 5 }}>
               <Text>
                 <Text style={styles.italic}>Total:</Text>{" "}
                 <Text>
-                  {movie?.currency}
-                  <Text style={{ fontSize: 18 }}>{booking?.total}</Text> (
-                  <Text style={{ fontSize: 18 }}>{booking?.users}</Text> persons
-                  * {movie?.currency}
-                  <Text style={{ fontSize: 18 }}>{booking?.price}</Text>
-                  {typeof movie?.prices === "object" && (
+                  <Text style={{ fontSize: 18 }}>
+                    {booking?.movie?.currency}
+                    {booking?.total}
+                  </Text>{" "}
+                  (<Text style={{ fontSize: 18 }}>{booking?.users}</Text>{" "}
+                  persons *{" "}
+                  <Text style={{ fontSize: 18 }}>
+                    {booking?.movie?.currency}
+                    {booking?.price}
+                  </Text>
+                  {typeof booking?.movie?.prices === "object" && (
                     <Text style={{ textTransform: "capitalize" }}>
                       {" "}
                       (
-                      {Object.keys(movie?.prices).find(
-                        (_) => movie?.prices[_] == booking?.price
+                      {Object.keys(booking?.movie?.prices).find(
+                        (_) => booking?.movie?.prices[_] == booking?.price
                       )}
                       ){" "}
                     </Text>
@@ -119,7 +123,7 @@ const BookingDetail = ({ route }) => {
                   alignItems: "center",
                 }}
               >
-                <QRCode value={JSON.stringify({ booking, movie })} />
+                <QRCode value={JSON.stringify({ booking })} />
               </View>
               <Text style={{ fontStyle: "italic", textAlign: "center" }}>
                 Note: Save screenshot of the above QR Code for future use.
@@ -139,16 +143,18 @@ const styles = StyleSheet.create({
   },
   movieTitle: {
     fontSize: 24,
-    fontWeight: "400",
+    fontWeight: "bold",
     paddingVertical: 5,
+    textAlign: "center",
+    color: "#0091F7",
   },
   italic: {
-    fontSize: 14,
+    fontSize: 13,
     fontStyle: "italic",
     fontWeight: "100",
   },
   content: {
-    fontSize: 16,
+    fontSize: 14,
   },
   downloadBtn: {
     padding: 10,

@@ -23,7 +23,7 @@ export function* storeBooking({ payload }) {
 export function* loadBooking({ payload }) {
   try {
     const { data } = yield axios.get(
-      `http://10.0.2.2:3001/transactions/${payload}`
+      `http://10.0.2.2:3001/transactions/${payload}?_expand=movie`
     );
 
     yield put({ type: types.LOAD_BOOKING_SUCCESS, payload: data });

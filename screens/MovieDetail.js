@@ -104,7 +104,6 @@ const MovieDetail = ({ route, navigation }) => {
           Alert.alert("Success", "Booking added successfully");
           navigation.navigate(`booking-detail`, {
             booking,
-            movie,
           });
         },
       })
@@ -140,7 +139,6 @@ const MovieDetail = ({ route, navigation }) => {
                 style={{
                   paddingVertical: 5,
                   fontSize: 16,
-                  letterSpacing: 1.1,
                   textAlign: "justify",
                 }}
               >
@@ -214,7 +212,7 @@ const MovieDetail = ({ route, navigation }) => {
                         }}
                       >
                         {type}
-                        <Text> for {movie?.currency} </Text>
+                        <Text> for {movie?.currency}</Text>
                         <Text
                           style={{
                             fontSize: 20,
@@ -258,7 +256,13 @@ const MovieDetail = ({ route, navigation }) => {
                     <Text style={{ ...styles.italic, color: "white" }}>
                       Booking date:{" "}
                     </Text>
-                    <Text style={{ ...styles.content, color: "white" }}>
+                    <Text
+                      style={{
+                        ...styles.content,
+                        color: "white",
+                        fontSize: 16,
+                      }}
+                    >
                       {moment(date).format("ddd, Do MMMM, YYYY")}
                     </Text>
                   </View>
@@ -271,7 +275,6 @@ const MovieDetail = ({ route, navigation }) => {
                       if (value) {
                         setDate(value);
                       }
-                      setOpen(false);
                     }}
                     minimumDate={new Date(date_)}
                     disabled={bookingLoading_ || movie?.type == "event"}
@@ -335,16 +338,18 @@ const styles = StyleSheet.create({
   },
   movieTitle: {
     fontSize: 24,
-    fontWeight: "400",
+    fontWeight: "bold",
     paddingVertical: 5,
+    textAlign: "center",
+    color: "#0091F7",
   },
   italic: {
-    fontSize: 14,
+    fontSize: 13,
     fontStyle: "italic",
     fontWeight: "100",
   },
   content: {
-    fontSize: 16,
+    fontSize: 14,
   },
   movie__price: {
     minWidth: 100,

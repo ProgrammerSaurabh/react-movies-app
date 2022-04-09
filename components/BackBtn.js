@@ -8,7 +8,9 @@ const BackBtn = () => {
   return navigation.canGoBack() ? (
     <TouchableWithoutFeedback onPress={() => navigation.goBack()}>
       <View style={styles.backBtn}>
-        <Text style={{ color: "white", fontSize: 14 }}>Go Back</Text>
+        <Text style={{ color: "white", fontSize: 14, textAlign: "center" }}>
+          Go Back
+        </Text>
       </View>
     </TouchableWithoutFeedback>
   ) : null;
