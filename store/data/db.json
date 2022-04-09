@@ -1,0 +1,255 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "type": "recommended",
+      "title": "Thor",
+      "image": "https://movieposters2.com/images/706954-b.jpg",
+      "genre": "Action, Adenture, comedy",
+      "director": "Taika Waititi",
+      "stars": "Chris Hemsworth, Tom Hiddleston, Cate Blanchett, Mark Ruffalo",
+      "plot": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+      "currency": "฿",
+      "release_date": "3 November 2017",
+      "duration": "2h 10m",
+      "ratings": 4.7,
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 2,
+      "type": "recommended",
+      "title": "Wonder woman",
+      "genre": "Action, Adenture, Fantasy",
+      "director": "Patty Jenkins",
+      "stars": "Gal Gadot, Chris Pine, Robin Wright, Lucy Davis",
+      "plot": "When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.",
+      "image": "https://rukminim1.flixcart.com/image/416/416/jt8yxe80/poster/d/e/f/medium-wonder-wom9-wonder-woman-movie-poster-original-imafemfzxmnjyn6z.jpeg?q=70",
+      "currency": "฿",
+      "release_date": "2 June 2017",
+      "duration": "2h 21m",
+      "ratings": 4,
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 3,
+      "type": "recommended",
+      "title": "Logan",
+      "genre": "Action, Drama, Sci-Fi",
+      "director": "James Mangold",
+      "stars": "Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook",
+      "plot": "In the near future, a weary Logan cares for an ailing Professor X, somewhere on the Mexican border. However, Logan's attempts to hide from the world, and his legacy, are upended when a young mutant arrives, pursued by dark forces.",
+      "image": "https://m.media-amazon.com/images/I/91WgnhSHyzL._AC_SL1500_.jpg",
+      "currency": "฿",
+      "release_date": "3 March 2017",
+      "duration": "2h 17m",
+      "ratings": 4.8,
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 4,
+      "type": "recommended",
+      "title": "Despicable me 3",
+      "genre": "Action, Drama, Sci-Fi",
+      "director": "James Mangold ",
+      "stars": "Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook",
+      "plot": "Gru meets his long-lost charming, cheerful, and more successful twin brother Dru who wants to team up with him for one last criminal heist.",
+      "image": "https://movieposters2.com/images/1588634-b.jpg",
+      "currency": "฿",
+      "release_date": "16 June 2017",
+      "duration": "1h 29m",
+      "ratings": 4.3,
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 5,
+      "type": "recommended",
+      "title": "Star war",
+      "genre": "Action, Drama, Sci-Fi",
+      "director": "James Mangold ",
+      "stars": "Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook",
+      "plot": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.",
+      "image": "https://starwarsblog.starwars.com/wp-content/uploads/2019/10/rise-of-skywalker-theatrical-poster.jpg",
+      "currency": "฿",
+      "release_date": "15 December 2017",
+      "duration": "2h 32m",
+      "ratings": 2.3,
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 6,
+      "type": "recommended",
+      "title": "Pitch Perfect 3",
+      "genre": "Animation, Action, Adventure",
+      "director": "Trish Sie",
+      "stars": "Anna Kendrick, Rebel Wilson, Brittany Snow, Anna Camp",
+      "plot": "Following their win at the world championship, the now separated Bellas reunite for one last singing competition at an overseas USO tour, but face a group who uses both instruments and voices.",
+      "image": "https://m.media-amazon.com/images/I/81SdXVQaSiL._AC_SY679_.jpg",
+      "currency": "฿",
+      "release_date": "20 December 2017",
+      "duration": "1h 33m",
+      "ratings": 4.2,
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 7,
+      "type": "recommended",
+      "title": "Opération casse-noisette 2",
+      "genre": "Animation, Action, Adventure",
+      "director": "Cal Brunker",
+      "stars": "Will Arnett, Maya Rudolph, Bobby Cannavale, Bobby Moynihan",
+      "plot": "Following the events of the first film, Surly and his friends must stop Oakton City's mayor from destroying their home to make way for a dysfunctional amusement park.",
+      "image": "https://m.media-amazon.com/images/I/71TZMyFpWfL._SL1000_.jpg",
+      "currency": "฿",
+      "release_date": "25 October 2017",
+      "duration": "1h 35m",
+      "ratings": 3.4,
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 8,
+      "type": "latest",
+      "title": "Uncharted",
+      "genre": "Action,Adventure,Thriller",
+      "director": "Ruben Fleischer",
+      "stars": "Tom Holland, Mark Wahlberg, Sophia Ali",
+      "plot": "Street-smart Nathan Drake, is recruited by seasoned treasure hunter, Victor Sully Sullivan, to recover a fortune amassed by Ferdinand Magellan, and lost 500 years ago by the House of Moncada.",
+      "image": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:q-80/et00311712-lkvnmxeeev-portrait.jpg",
+      "currency": "₹",
+      "release_date": "18 October 2022",
+      "duration": "1h 58m",
+      "ratings": 4,
+      "prices": {
+        "normal": 100,
+        "superior": 200,
+        "sofa": 300
+      }
+    },
+    {
+      "id": 9,
+      "type": "latest",
+      "title": "Dolittle",
+      "genre": "Action,Adventure,Comedy",
+      "director": "Stephen Gaghan",
+      "stars": "Robert Downey Jr.,Tom Holland, John Cena",
+      "plot": "When the young queen falls gravely ill, a reluctant Dolittle is forced to set sail on an epic adventure to a mythical island in search of a cure.",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kids-movies-2020-doolittke-1576597612.jpg?crop=0.8293075684380031xw:1xh;center,top&resize=480:*",
+      "currency": "₹",
+      "release_date": "17 January 2020",
+      "duration": "1h 41m",
+      "ratings": 3.4,
+      "prices": {
+        "normal": 200,
+        "superior": 400,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 10,
+      "type": "upcoming",
+      "title": "Beast",
+      "genre": "Action,Adventure,Thriller",
+      "director": "Nelson Dilipkumar",
+      "stars": "Vijay, Pooja Hegde, Yogi Babu",
+      "plot": "Veera Raghavan, a former raw agent, is tasked to deal with an International Terrorist organization who have hijacked a mall demanding the release of their leader. Can Veera rescue all the hostages in time?",
+      "image": "https://assetscdn1.paytm.com/images/cinema/Beast-cbb50560-a9d1-11ec-98b0-ff32d61a5fb5.jpg",
+      "currency": "₹",
+      "release_date": "13 April 2022",
+      "duration": "2h 36m",
+      "prices": {
+        "normal": 150,
+        "superior": 250,
+        "sofa": 300
+      }
+    },
+    {
+      "id": 11,
+      "type": "upcoming",
+      "title": "Bhool Bhulaiyaa 2",
+      "genre": "Comedy,Horror",
+      "director": "Anees Bazmee",
+      "stars": "Kartik Aaryan, Kiara Advani, Tabu",
+      "plot": "Set within the sprawling halls of a haveli, Bhool Bhulaiyaa 2 is a horror movie that is a sequel to the 2007 movie of the same name. The film is starring Kartik Aaryan and Kiara Advani and is directed by Anees Bazmee.",
+      "image": "https://static-koimoi.akamaized.net/wp-content/new-galleries/2019/08/bhool-bhulaiyaa-2-1.jpg",
+      "currency": "₹",
+      "release_date": "20 May 2022",
+      "prices": {
+        "normal": 200,
+        "superior": 400,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 12,
+      "type": "event",
+      "title": "The Crowd Work Show By Abhishek Walia",
+      "genre": "Comedy",
+      "stars": "Abhishek Walia",
+      "image": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCA4IE1heQ%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00321962-qewyuxqdus-portrait.jpg",
+      "date": "08 May 2022",
+      "currency": "₹",
+      "prices": 299
+    },
+    {
+      "id": 13,
+      "type": "event",
+      "title": "Saregama Born To Shine Tour Ft. Diljit Dosanjh",
+      "genre": "Comedy",
+      "stars": "Diljit Dosanjh",
+      "image": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCA5IEFwciBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00325037-dwftcyrhdn-portrait.jpg",
+      "date": "09 April 2022",
+      "currency": "₹",
+      "prices": 999
+    },
+    {
+      "id": 14,
+      "type": "event",
+      "title": "Asiad Circus",
+      "genre": "Circus",
+      "stars": "Asiad Circus",
+      "image": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCA3IEFwciBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00324684-rfdrqezgsn-portrait.jpg",
+      "date": "07 April 2022",
+      "currency": "₹",
+      "prices": 100
+    },
+    {
+      "id": 15,
+      "type": "event",
+      "title": "Gaurav Gupta Live",
+      "genre": "Circus",
+      "stars": "Gaurav Gupta",
+      "image": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNCBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323813-jzvaqpfukd-portrait.jpg",
+      "date": "24 April 2022",
+      "currency": "₹",
+      "prices": 499
+    }
+  ],
+  "transactions": []
+}
