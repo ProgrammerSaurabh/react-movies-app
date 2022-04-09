@@ -4,10 +4,6 @@ import {
   Text,
   StyleSheet,
   ImageBackground,
-  Alert,
-  TouchableWithoutFeedback,
-  Platform,
-  PermissionsAndroid,
 } from "react-native";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,8 +12,6 @@ import Loader from "../components/Loader";
 import { loadBooking } from "../store/actions/bookings.actions";
 
 import QRCode from "react-qr-code";
-import { captureScreen } from "react-native-view-shot";
-import CameraRoll from "@react-native-community/cameraroll";
 
 import moment from "moment";
 
@@ -45,47 +39,6 @@ const BookingDetail = ({ route }) => {
       dispatch(loadBooking(bookingId));
     }
   }, [bookingId, isFocused]);
-
-  const hasAndroidPermission = async () => {
-    const permission = PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE;
-
-    const hasPermission = await PermissionsAndroid.check(permission);
-    if (hasPermission) {
-      return true;
-    }
-
-    const status = await PermissionsAndroid.request(permission);
-    return status === "granted";
-  };
-
-  // const downloadQRCodeHandler = async () => {
-  //   if (Platform.OS === "android" && !(await hasAndroidPermission())) {
-  //     return;
-  //   }
-
-  //   try {
-  //     const uri = await captureScreen({ result: "tmpfile" });
-
-  //     console.log("====================================");
-  //     console.log(uri);
-  //     console.log("====================================");
-
-  //     const image = CameraRoll.save(uri, { type: "photo" });
-
-  //     console.log("====================================");
-  //     console.log(uri);
-  //     console.log("====================================");
-
-  //     if (image) {
-  //       Alert.alert("Success", "Image saved to gallery");
-  //     }
-  //   } catch (error) {
-  //     console.log("====================================");
-  //     console.log(error);
-  //     console.log("====================================");
-  //     Alert.alert("Error", "Couldn't save.");
-  //   }
-  // };
 
   return (
     <ScrollView style={{ backgroundColor: "#eee", marginVertical: 5 }}>
@@ -171,13 +124,6 @@ const BookingDetail = ({ route }) => {
               <Text style={{ fontStyle: "italic", textAlign: "center" }}>
                 Note: Save screenshot of the above QR Code for future use.
               </Text>
-              {/* <TouchableWithoutFeedback onPress={() => downloadQRCodeHandler()}>
-                <View style={styles.downloadBtn}>
-                  <Text style={{ color: "white", fontSize: 18 }}>
-                    Download QR Code
-                  </Text>
-                </View>
-              </TouchableWithoutFeedback> */}
             </View>
           </View>
         </View>

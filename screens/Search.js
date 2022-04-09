@@ -67,7 +67,7 @@ const Search = ({ navigation }) => {
               <TouchableWithoutFeedback
                 onPress={() => {
                   setSearch("");
-                  navigation.navigate("movie-detail", { movie: movie.id });
+                  navigation.replace("movie-detail", { movie: movie.id });
                 }}
               >
                 <View
