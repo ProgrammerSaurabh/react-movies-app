@@ -110,6 +110,10 @@ const MovieDetail = ({ route, navigation }) => {
     );
   };
 
+  console.log("====================================");
+  console.log(open);
+  console.log("====================================");
+
   return (
     <ScrollView style={{ backgroundColor: "#eee", marginVertical: 5 }}>
       <BackBtn />
@@ -240,7 +244,11 @@ const MovieDetail = ({ route, navigation }) => {
               )}
               <View style={{ display: "flex", flexDirection: "column" }}>
                 <TouchableWithoutFeedback
-                  onPress={() => setOpen((prev) => !prev)}
+                  onPress={() => {
+                    if (movie?.type !== "event") {
+                      setOpen((prev) => !prev);
+                    }
+                  }}
                 >
                   <View
                     style={{
@@ -275,6 +283,7 @@ const MovieDetail = ({ route, navigation }) => {
                       if (value) {
                         setDate(value);
                       }
+                      setOpen(false);
                     }}
                     minimumDate={new Date(date_)}
                     disabled={bookingLoading_ || movie?.type == "event"}
